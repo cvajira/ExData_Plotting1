@@ -1,4 +1,4 @@
-##This program reproduce plot 3.
+##This program reproduce plot 4.
 
 
 ## I opt to read entire dataset first and then subset the necessay part,since there is no condition on that.
