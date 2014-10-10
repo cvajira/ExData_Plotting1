@@ -28,11 +28,11 @@ plot(dataset2$Time,dataset2$Global_active_power,"l",xlab=" ",ylab="Global Active
 plot(dataset2$Time,dataset2$Voltage,"l",xlab=" datetime",ylab="Voltage",main=" ")
 
 ## Third we plot bottop left graph. Here we have to plot several graphs. We also have to include
-## We aslo have to use legend function to name each function.
+## We aslo have to use legend function to name each function. Also no box around legend functions.
 plot(dataset2$Time,as.numeric(dataset2$Sub_metering_1),"l",xlab=" ", ylab="Energy sub metering",col="black")
 lines(dataset2$Time,as.numeric(dataset2$Sub_metering_2),"l",col="red")
 lines(dataset2$Time,as.numeric(dataset2$Sub_metering_3),"l",col="blue")
-legend("topright",legend=names(dataset2[7:9]),col=c("black","red","blue"),lty=c(1,1,1),lwd=c(2.5,2.5,2.5))
+legend("topright",legend=names(dataset2[7:9]),col=c("black","red","blue"),lty=c(1,1,1),lwd=c(2.5,2.5,2.5),bty="n")
 
 ## Final we plot bottom right graph and we close graphic device.
 plot(dataset2$Time,dataset2$Global_reactive_power,"l",xlab="datetime ",ylab="Global_reactive_power",main=" ")
